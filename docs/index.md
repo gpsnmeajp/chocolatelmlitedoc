@@ -39,3 +39,4 @@ Chocolate LM Liteは、そういったAIサービスと同等の品質を提供�
 - [応用機能のご紹介](3_advanced.md)
 - [AI利用についての基礎知識](4_ai-basics.md)
 - [外出先のスマホからアクセスする(Tailscaleの使い方)](5_tailscale.md)
+- [MCPツール](6_mcp.md)
