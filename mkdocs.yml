@@ -8,7 +8,7 @@ theme:
   palette:
     # 自動モード
     - media: "(prefers-color-scheme)"
-      primary: brown
+      primary: custom
       accent: deep orange
       toggle:
         icon: material/brightness-auto
@@ -17,7 +17,7 @@ theme:
     # ライトモード
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: brown
+      primary: custom
       accent: deep orange
       toggle:
         icon: material/brightness-7
@@ -26,7 +26,7 @@ theme:
     # ダークモード
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: brown
+      primary: custom
       accent: deep orange
       toggle:
         icon: material/brightness-4
@@ -50,6 +50,9 @@ theme:
     
 plugins:
   - search
+
+extra_css:
+  - stylesheets/extra.css
 
 markdown_extensions:
   - admonition
@@ -80,5 +83,3 @@ markdown_extensions:
       custom_checkbox: true
   - abbr
 
-nav:
-  - ホーム: index.md
