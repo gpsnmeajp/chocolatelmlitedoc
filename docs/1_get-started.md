@@ -9,6 +9,8 @@ MacやLinux、(高性能なスマホなら)Androidでも動作します。
 ただし、いくらかのコマンド操作が必要です。[リポジトリのビルド手順](https://github.com/gpsnmeajp/ChocolateLMLite?tab=readme-ov-file#%E3%83%93%E3%83%AB%E3%83%89%E6%89%8B%E9%A0%86)をご参照ください。
 
 ## AIサービスに登録する
+
+### ご紹介
 本アプリケーションは、複数のAIサービスに対応しています。  
 初心者には**OpenRouter**がおすすめですので、ここではOpenRouterの使用を前提に説明します。
 
@@ -37,8 +39,10 @@ MacやLinux、(高性能なスマホなら)Androidでも動作します。
 
     情報収集は、OpenRouterの[プライバシー設定](https://openrouter.ai/settings/privacy)で調整できますが、オフにすると無料モデルは使用できなくなります。
 
-<img src="/chocolatelmlitedoc/image-3.png" width=50%>
+<img src="/chocolatelmlitedoc/image-3.png"  width=600px>
 
+
+### 登録手順
 登録するには、
 
 + まず[公式サイト](https://openrouter.ai/)に行きます。
@@ -53,6 +57,7 @@ MacやLinux、(高性能なスマホなら)Androidでも動作します。
     もし、「今すぐGPT-4oとかGPT-5とかClaude Sonnet 4とかを使いたい」という方は、そのまま右上のメニューから「Credits」を選択して、Add Creditsボタンから課金してください。一旦は$10 (1500円程度)課金すれば、十分色々楽しめると思います。
 
 
+### APIキーの入手
 次にAPIキーを入手します。
 
 + 右上のメニューから、「Keys」を選択 (あるいは[ここをクリック](https://openrouter.ai/settings/keys))
