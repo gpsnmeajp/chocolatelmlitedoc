@@ -29,6 +29,8 @@ MacやLinux、(高性能なスマホなら)Androidでも動作します。
 
 **公式サイト**: [https://openrouter.ai/](https://openrouter.ai/)
 
+<img src="/chocolatelmlitedoc/image-3.png"  width=600px>
+
 ※無料枠を超える利用にはクレジットカードの登録が必要な点にご注意ください。  
  本ページでは解説しませんが、無料にこだわる場合はGeminiの方が無料枠が広いようです。
 
@@ -38,9 +40,6 @@ MacやLinux、(高性能なスマホなら)Androidでも動作します。
     (有料と言っても、1回の生成につき数円未満の場合が多いです)
 
     情報収集は、OpenRouterの[プライバシー設定](https://openrouter.ai/settings/privacy)で調整できますが、オフにすると無料モデルは使用できなくなります。
-
-<img src="/chocolatelmlitedoc/image-3.png"  width=600px>
-
 
 ### 登録手順
 登録するには、
@@ -67,14 +66,27 @@ MacやLinux、(高性能なスマホなら)Androidでも動作します。
 
 これでAIサービスへの登録は完了です。
 
+### 図で説明
+右上のメニューから、「Keys」を選択 (あるいは[ここをクリック](https://openrouter.ai/settings/keys))
+
+<img src="/chocolatelmlitedoc/image-5.png" width=300px>
+
+「Create API Key」の青いボタンをクリック
+
+<img src="/chocolatelmlitedoc/image-6.png" width=400px>
+
+名前欄に適当な名前を入力して「Create」をクリック
+
+<img src="/chocolatelmlitedoc/image-7.png" width=300px> 
+
+API Keyが表示されますので、コピーボタンを押してコピーして、メモ帳などに取っておいてください。
+
+<img src="/chocolatelmlitedoc/image-8.png" width=300px>
+
 !!! warning
     このAPIキーを他人に渡したり見せたりすると、勝手にAIを使われてしまいます。  
     課金が減ったり、犯罪に使われることもありますので、絶対に他人に渡さないでください。  
     APIキーは、一度画面を閉じると二度と表示されませんが、何度でも削除して作り直すことが出来ます。  
-
-<img src="/chocolatelmlitedoc/image-5.png" width=300px> <img src="/chocolatelmlitedoc/image-6.png" width=400px>
-
-<img src="/chocolatelmlitedoc/image-7.png" width=300px> <img src="/chocolatelmlitedoc/image-8.png" width=300px>
 
 ## ダウンロードと準備
 
@@ -86,20 +98,6 @@ MacやLinux、(高性能なスマホなら)Androidでも動作します。
 + 解凍ツールを使うか、zipファイルを右クリックして「すべて展開」をクリックして、zipファイルを展開します。展開先はデスクトップなどのお好みの場所で問題ありません。
 
 ![alt text](image-9.png)
-
-!!! warning "重要"
-    フォルダの場所は任意ですが、置かないほうが良い場所はあります。
-    + 「ダウンロード」フォルダのまま使うと、後で自動削除される可能性があります。必ず別の場所に移動してください。  
-    + Program FilesやAppDataなどのシステムフォルダでは正常に動作しないため、避けてください。
-    + OneDrive上では、ときどきうまく動かないかもしれません。
-
-!!! tips
-    MacやLinux、Androidは[リポジトリのビルド手順](https://github.com/gpsnmeajp/ChocolateLMLite?tab=readme-ov-file#%E3%83%93%E3%83%AB%E3%83%89%E6%89%8B%E9%A0%86)をご参照ください。
-
-!!! notice
-    このアプリは個人開発者が公開しているため、未確認の発行元としてWindowsの警告が出ることがあります。  
-    ウィルス検査をして出荷していますが、誤検知されることはあります。  
-    もしEXE形式が信用できない場合は、ご自身での[ビルド手順](https://github.com/gpsnmeajp/ChocolateLMLite?tab=readme-ov-file#%E3%83%93%E3%83%AB%E3%83%89%E6%89%8B%E9%A0%86)をおすすめします。 
 
 ## 起動
 
@@ -131,9 +129,23 @@ MacやLinux、(高性能なスマホなら)Androidでも動作します。
 !!! warning
     フォルダ内に大量のファイルがありますが、すべて必要なので移動したり消したりしないでください。
 
+!!! warning
+    フォルダの場所は任意ですが、置かないほうが良い場所はあります。
+    + 「ダウンロード」フォルダのまま使うと、後で自動削除される可能性があります。必ず別の場所に移動してください。  
+    + Program FilesやAppDataなどのシステムフォルダでは正常に動作しないため、避けてください。
+    + OneDrive上では、ときどきうまく動かないかもしれません。
+
 !!! tips
     うまく起動しない場合は、展開からやり直してください。
     logsフォルダ内のログファイルに情報がある場合があります。
+
+!!! tips
+    MacやLinux、Androidは[リポジトリのビルド手順](https://github.com/gpsnmeajp/ChocolateLMLite?tab=readme-ov-file#%E3%83%93%E3%83%AB%E3%83%89%E6%89%8B%E9%A0%86)をご参照ください。
+
+!!! notice
+    このアプリは個人開発者が公開しているため、未確認の発行元としてWindowsの警告が出ることがあります。  
+    ウィルス検査をして出荷していますが、誤検知されることはあります。  
+    もしEXE形式が信用できない場合は、ご自身での[ビルド手順](https://github.com/gpsnmeajp/ChocolateLMLite?tab=readme-ov-file#%E3%83%93%E3%83%AB%E3%83%89%E6%89%8B%E9%A0%86)をおすすめします。 
 
 ## 初期設定
 
@@ -151,6 +163,8 @@ MacやLinux、(高性能なスマホなら)Androidでも動作します。
 
 入力が終わったら、**「保存」ボタンを押してから** 「戻る」を押してください。
 
+<img src="/chocolatelmlitedoc/image-24.png" width=400px>
+
 !!! tips
     ここでは、無課金でも試せる `openai/gpt-oss-20b:free` を案内しています。  
     以下の点に注意してください。
@@ -164,8 +178,6 @@ MacやLinux、(高性能なスマホなら)Androidでも動作します。
 
 !!! tips
     もし、既にOpenRouter以外のAIサービスを契約していて、BaseURLやAPIキーが分かる場合はそれが使用できます。  
-
-<img src="/chocolatelmlitedoc/image-24.png" width=400px>
 
 ## はじめてのペルソナ
 AIと会話してみましょう。
@@ -209,12 +221,6 @@ AIと会話してみましょう。
 
 AIの振る舞いを根本から設定することが出来ます。
 
-!!! tips
-    システムプロンプトは、常に適用される非常に強力な指示です。  
-    一般のAIサービスのプロンプトより遥かに強力に効くため、必要に応じて調整が必要です。
-
-    また、システムプロンプトに何でも入れてよいというわけではなく、言語モデルの安全基準にぶつかったり、LLMプロバイダーの安全基準に引っかかると、軽い場合で応答拒否、(米国法違反などの内容を含む)最悪の場合は人手によるチェックの上、利用権限の剥奪などが起きますので、設定内容は注意してください。
-
 <img src="/chocolatelmlitedoc/image-27.png" width=400px>
 
 試しに「俺様キャラとして振る舞って」と入れると、キャラクターの振る舞いが苦手なgpt-ossでも、以下のように振る舞いが変わります。
@@ -224,6 +230,12 @@ AIの振る舞いを根本から設定することが出来ます。
 ペルソナ一覧画面に戻るには、左上のボタンを押します。
 
 <img src="/chocolatelmlitedoc/image-29.png" width=400px>
+
+!!! tips
+    システムプロンプトは、常に適用される非常に強力な指示です。  
+    一般のAIサービスのプロンプトより遥かに強力に効くため、必要に応じて調整が必要です。
+
+    また、システムプロンプトに何でも入れてよいというわけではなく、言語モデルの安全基準にぶつかったり、LLMプロバイダーの安全基準に引っかかると、軽い場合で応答拒否、(米国法違反などの内容を含む)最悪の場合は人手によるチェックの上、利用権限の剥奪などが起きますので、設定内容は注意してください。
 
 ## 会話統計機能と休憩促進について
 
@@ -257,10 +269,6 @@ OpenRouterをご利用の場合は、利用料金について定期的にご確�
 情報収集は、OpenRouterの[プライバシー設定](https://openrouter.ai/settings/privacy)で調整できますが、オフにすると無料モデルは使用できなくなります。  
 (逆に有料モデルで情報収集を許可すると割引もあります。)
 
-!!! tips
-    記載の料金は、2025年10月時点のものです。提供されるモデルは日々変わります。   
-    最新の情報は[OpenRouter公式](https://openrouter.ai/models)を参照してください。
-
 | モデル名 | 入力料金 | 出力料金 | 特徴 | プライバシー |
 |---------|------|----------|------|------------|
 | `z-ai/glm-4.5-air:free` | 無料 | 無料 | 自由度が高く創作能力も良い、性能を期待しすぎないこと。 | ⚠️ ログ収集あり |
@@ -277,6 +285,10 @@ OpenRouterをご利用の場合は、利用料金について定期的にご確�
 | `z-ai/glm-4.5-air` | $0.14/M input tokens | $0.86/M output tokens | 比較的自由度が高く創作能力も良いが、性能を期待しすぎないこと。 | ✅ プライバシー保護 |
 | `anthropic/claude-sonnet-4` | Starting at **$3/M** input tokens | Starting at **$15/M** output tokens | 創作能力はかなり高めだが高価 | ✅ プライバシー保護 |
 | `anthropic/claude-opus-4` | **$15/M** input tokens | **$75/M** output tokens | 創作能力は最高クラスだが超高額なのでまったくおすすめしません！すぐにクレジットが空になります！ | ✅ プライバシー保護 |
+
+!!! tips
+    記載の料金は、2025年10月時点のものです。提供されるモデルは日々変わります。   
+    最新の情報は[OpenRouter公式](https://openrouter.ai/models)を参照してください。
 
 !!! tips "M Tokensとは？"
     - 日本語は1文字が1トークンに近い。英語は単語に近い。
