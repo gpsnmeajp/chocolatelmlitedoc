@@ -80,6 +80,11 @@ MacやLinux、(高性能なスマホなら)Androidでも動作します。
 
 <img src="/chocolatelmlitedoc/image-7.png" width=300px> 
 
+※ ここで1日の利用金額上限とかを決めることが出来ます。  
+　例えばCredit limitを1にし、Reset limit everyをDailyにすると1日1ドルを超えると強制停止します。
+
+<img src="/chocolatelmlitedoc/image-39.png" width=300px> 
+
 API Keyが表示されますので、コピーボタンを押してコピーして、メモ帳などに取っておいてください。
 
 <img src="/chocolatelmlitedoc/image-8.png" width=300px>
