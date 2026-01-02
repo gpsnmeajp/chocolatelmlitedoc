@@ -1,0 +1,1100 @@
+
+<!doctype html>
+<html lang="ja" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://gpsnmeajp.github.io/chocolatelmlitedoc/2_tune/">
+      
+      
+        <link rel="prev" href="../1_get-started/">
+      
+      
+        <link rel="next" href="../3_advanced/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>こだわり調整 - Chocolate LM Lite 🍫 説明書</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="brown" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          コンテンツにスキップ
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="ヘッダー">
+    <a href=".." title="Chocolate LM Lite 🍫 説明書" class="md-header__button md-logo" aria-label="Chocolate LM Lite 🍫 説明書" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Chocolate LM Lite 🍫 説明書
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              こだわり調整
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="brown" data-md-color-accent="deep-orange"  aria-label="ライトモードに切り替え"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="ライトモードに切り替え" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="brown" data-md-color-accent="deep-orange"  aria-label="ダークモードに切り替え"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="ダークモードに切り替え" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="brown" data-md-color-accent="deep-orange"  aria-label="自動モードに切り替え"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="自動モードに切り替え" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="検索">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="共有" aria-label="共有" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="クリア" aria-label="クリア" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            検索を初期化
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/gpsnmeajp/chocolatelmlite" title="リポジトリへ" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Chocolate LM Lite
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="タブ" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Chocolate LM Lite 🍫 へようこそ
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../1_get-started/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  とにかく始めてみる(最速スタート)
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  こだわり調整
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../3_advanced/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  応用機能のご紹介
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../4_ai-basics/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  AI利用についての基礎知識
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../5_tailscale/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  外出先からアクセスする（Tailscale）
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../6_mcp/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  MCPツール
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="ナビゲーション" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Chocolate LM Lite 🍫 説明書" class="md-nav__button md-logo" aria-label="Chocolate LM Lite 🍫 説明書" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Chocolate LM Lite 🍫 説明書
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/gpsnmeajp/chocolatelmlite" title="リポジトリへ" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Chocolate LM Lite
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chocolate LM Lite 🍫 へようこそ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1_get-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    とにかく始めてみる(最速スタート)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    こだわり調整
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    こだわり調整
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#chocolate-lm-lite" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chocolate LM Liteの機能について
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        口調が崩れたり、指示が効かないときは
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="口調が崩れたり、指示が効かないときは">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ポストプロンプト
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        キーワードナレッジ
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ツールが悪さをするときは
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ツールを使ってくれないときは
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        データ共有の注意点
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        メモリ機能・プロジェクト機能とかのファイルの場所
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        メモリの確認をしたい・アイコンや背景画像を設定したい
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        発言を編集したい
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        会話履歴を残して編集したい
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        システム設定について
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#llm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ローカルLLMや他のサービスって使えるの？
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        複数ペルソナを同時に動かしたい
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        画像生成
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3_advanced/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    応用機能のご紹介
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4_ai-basics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI利用についての基礎知識
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5_tailscale/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    外出先からアクセスする（Tailscale）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6_mcp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MCPツール
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="_1">こだわり調整</h1>
+<p>基本的な使い方を、<a href="../1_get-started/">とにかく始めてみる(最速スタート)</a> で学んだ人に、実用的にするためのアドバイスと情報です。</p>
+<h2 id="chocolate-lm-lite">Chocolate LM Liteの機能について</h2>
+<p>最速スタートで紹介できていない機能を含め、以下のような機能があります。<br />
+(Howtoツールから引用)</p>
+<p>本ページでは、このうち基本的なことを説明します。<br />
+ツールの調整などの細かい応用的なことは、<a href="../3_advanced/">応用機能のご紹介</a> で改めて紹介します。</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>主な特徴は以下の通りです：
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>- APIサービスやローカルLLMを設定し、自由な対話が可能
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>- シンプルな画面で初心者に優しい設計
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>- 複数のペルソナ(キャラクター)を作成・管理可能(それぞれにシステムプロンプト・モデル・メモリを設定可能)
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>- タイムスタンプ機能で、時間を考慮した対話が可能
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>- 自動コンテキストカットオフ機能により、最大長制限なく対話を継続できます
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>- 仮想スクロール機能で、大量の対話履歴も快適に閲覧可能
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>- 会話統計機能で、自分がどれだけ会話したか把握可能
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>- 短時間に大量の会話をした場合、休憩を促すメッセージを表示する機能もあります
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>- 古い履歴や画像はトークン数節約のため自動的に送信対象から外されます
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>- メモリ機能で、会話が長引いても重要な情報を保持可能
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>- Javascriptサンドボックス実行ツールで、正確な計算などが可能
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>- プロジェクトフォルダ管理機能で、資料を読んだりプログラムを書いたりできます。
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>- Webhook機能で、AIの発言をDiscordなど外部サービスに転送可能
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>- タイマーで自発的に発言する機能を搭載
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>- マルチモーダルLLMによる画像生成機能を備えます
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>- Model Context Protocolによる外部ツール拡張機能を備え、AIの機能を柔軟に拡張可能
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>- 定期的な自動アップデートチェック機能を搭載
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>ぜひChocolate LM Liteをお楽しみください！
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>注意
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>- ご利用の際は、各APIサービスの利用規約を遵守してください。
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>- 生成されたコンテンツの責任はユーザーにあります。
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>- 外部ツール呼び出しの際に承認や確認は行いません。
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>- 標準ツールは安全性を考慮していますが、MCPツールなど外部ツールの利用には注意してください。
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>- 各種ツールはオンオフおよび各種制限調整が可能です。必要に応じて調整してください。(既定では無効になっている機能もあります)
+</span></code></pre></div>
+<h2 id="_2">口調が崩れたり、指示が効かないときは</h2>
+<p>本アプリケーションでは、システムプロンプトに加えて、ポストプロンプトやキーワードナレッジを使うことで、より強力にAIに指示を与えることが出来ます。</p>
+<h3 id="_3">ポストプロンプト</h3>
+<p>ポストプロンプトは、最新のユーザー発言に続けてAIに渡される追加の指示文です。<br />
+ポストプロンプトは会話履歴に残らず、最新の生成処理時に動的に適用されます。<br />
+一度有効にすると、無効にするまで毎回適用されます。  </p>
+<p>言語モデルの特性上、先頭に当たるシステムプロンプトを後から修正しても効果が薄い場合がありますが、ポストプロンプトは末尾(補完の直前)に追加されるため、より強力かつ即効性を持って指示を与えることが出来ます。</p>
+<p>ペルソナの口調や、機嫌、行動などを矯正したり、速やかに変更・修正したい場合にも有効です。
+この機能が有効の間、最新のユーザー発言は<code>&lt;user&gt;</code>タグで囲まれ、次に<code>&lt;system&gt;</code>タグで囲まれたポストプロンプトが続きます。</p>
+<p>例: ユーザーが<code>こんにちは、元気？</code>と発言し、ポストプロンプトに<code>必ず丁寧な口調で答えること。</code>と設定していた場合、AIには以下のように渡されます。</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>&lt;user&gt;こんにちは、元気？&lt;/user&gt;
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>&lt;system&gt;必ず丁寧な口調で答えること。&lt;/system&gt;
+</span></code></pre></div>
+<p>より効果を強めたい場合は、システムプロンプトに以下のように追加してください。</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>user: ユーザーの発言です。
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>system: システムからの指示です。
+</span></code></pre></div>
+<h3 id="_4">キーワードナレッジ</h3>
+<p>ユーザー発言に含まれるキーワードに応じて、動的かつワンタイムでポストプロンプトを挿入する機能と考えてください。<br />
+キーワードナレッジも会話履歴に残らず、最新の生成処理時に動的に適用されます。  </p>
+<p>システムプロンプトに入れておくには大きすぎる知識や、即効性が求められる知識を与えるのに有効です。 <br />
+特定の行動や知識を、合言葉に合わせて与えたい場合にも有効です。   </p>
+<p>ツールの使い方を忘れやすい言語モデルに対して、ツールの使い方をキーワードナレッジで与えることで、ツールを正しく使わせることも出来ます。 <br />
+例えば天気といえば、東京の天気であり、天気の取得にはgoogleSearchツールを使う、などと与えることで、守る確率を格段に上げることが出来ます。  </p>
+<p>キーワードは、カンマ区切りで複数指定することも出来ます。<br />
+例えば住所を<code>自宅, 家, うち, マイホーム</code>などと複数指定しておくことで、より多くのパターンに対応できます。  </p>
+<p>簡易的なRAGのように使うことができますが、キーワードは完全一致であることに注意してください。<br />
+(ベクトルデータベースが必要な場合は、MCPで外部ツールを組み合わせてください)</p>
+<p>例: ユーザー入力で<code>自宅の天気を教えて</code>と言う発言があり、<code>自宅</code>や<code>天気</code>にキーワードを設定していた場合、以下のようにAIに渡されます。</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>自宅の天気を教えて
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>&lt;knowledge key=&quot;自宅&quot;&gt;ユーザーの住所は東京都&lt;/knowledge&gt;
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>&lt;knowledge key=&quot;天気&quot;&gt;天気の取得にはgoogleSearchを使う&lt;/knowledge&gt;
+</span></code></pre></div>
+<p>より効果を強めたい場合は、システムプロンプトに以下のように追加してください。</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>knowledge: ユーザー発言に含まれるキーワードに応じて渡される補足情報です。
+</span></code></pre></div>
+<h2 id="_5">ツールが悪さをするときは</h2>
+<ul>
+<li>Howtoツールを呼び出してAIであることを認識してしまい、ロールプレイが出来ない</li>
+<li>現在時刻が原因で、小説に現実の時間が反映されてしまう</li>
+<li>プライバシーに関する情報を扱っているので、メモリ機能などは無効にしたい</li>
+<li>会話の統計情報をいちいち引き合いに出されて困る</li>
+</ul>
+<p>そういう場合は、システム設定の応用設定からオフにできます。<br />
+すべてオフにすると、素の言語モデル機能のみになります。</p>
+<p>詳しくは、<a href="../3_advanced/">応用機能のご紹介</a> を御覧ください。</p>
+<h2 id="_6">ツールを使ってくれないときは</h2>
+<p>本アプリケーションでは、AIサービスのようにツールを積極的に使うような指示を与えていません。</p>
+<p>そのため、AIがツールを使ってくれないときは、システムプロンプトやポストプロンプト、キーワードナレッジに「ツールを使うべき場面」を説明してあげてください。<br />
+主なツールの正式名は以下です。</p>
+<ul>
+<li>Howto: 本アプリケーションについての説明文を取得</li>
+<li>Eval: サンドボックス内でJavascriptコードを実行します</li>
+<li>UpdatePersonaMemory: 任意の短文が保存できるメモリの追加・更新(500文字以内)</li>
+<li>ReadProjectFile: プロジェクトフォルダ内のファイル内容を取得</li>
+<li>WriteProjectFile: プロジェクトフォルダ内にファイルとして保存</li>
+<li>GenerateImage: マルチモーダル言語モデルに画像の生成を依頼</li>
+</ul>
+<p>MCPツールに関しては、各ツールの説明を参照ください。</p>
+<h2 id="_7">データ共有の注意点</h2>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>general.yaml というファイルは、他人に渡さないでください。APIキーが入っています。</p>
+</div>
+<h2 id="_8">メモリ機能・プロジェクト機能とかのファイルの場所</h2>
+<p>EXEファイルの下に<code>data</code>というフォルダが出来ています。<br />
+その下に、persona_XXXというフォルダが有り、それがペルソナの本体です。</p>
+<ul>
+<li>project: プロジェクト機能のフォルダです。AIはこの中に何が入っているのかを知ることができ、テキストのみ読み書きできます。(サブフォルダは使えません。PDFなども対応していません)</li>
+<li>settings.yaml: 名前、モデルなどの設定が入っています。メモ帳で編集できます。壊すと全部消えます。</li>
+<li>memory.yaml: メモリ機能で保存されるメモリが入っています。メモ帳で編集できます。壊すと全部消えます。</li>
+<li>keyword_knowledge.yaml: キーワードナレッジの設定が入っています。メモ帳で編集できます。壊すと全部消えます。</li>
+<li>system_prompt.txt: システムプロンプトが入っています。メモ帳で編集できます。</li>
+<li>talk.sqlite3: 会話履歴が入っています。SQLite3形式が扱えるアプリケーションで確認・編集ができます。壊すと全部消えます。</li>
+<li>talk.jsonl.bak: 旧形式の会話履歴が入っています。</li>
+</ul>
+<p>※これらのファイルは、必要が生まれるまで作成されません。</p>
+<p>編集する際は必ずバックアップを取ってください。<br />
+EXEファイルの下に<code>backup</code>というフォルダには、7日分の自動バックアップがあるので、壊れたときはそこから救出できるかもしれません。</p>
+<p><img alt="alt text" src="../image-36.png" /></p>
+<div class="admonition tips">
+<p class="admonition-title">Tips</p>
+<p>SQLite3形式の会話履歴を確認・編集したい場合は、<a href="https://sqlitebrowser.org/dl/">DB Browser for SQLite</a> などのアプリケーションを使うと便利です。(Windows, Mac, Linux対応)<br />
+CSV形式などにもエクスポートできます。(Excelで開く場合は、<code>データ</code>→<code>テキストまたはCSVから</code>をクリックし、インポートしてください)</p>
+<p><img alt="alt text" src="../image-40.png" /></p>
+<p><img alt="alt text" src="../image-41.png" /></p>
+<p><img alt="alt text" src="../image-42.png" /></p>
+</div>
+<h2 id="_9">メモリの確認をしたい・アイコンや背景画像を設定したい</h2>
+<p>ペルソナ設定画面の下の方にスクロールすると、メモリや画像設定画面が出ます。</p>
+<p><img src="/chocolatelmlitedoc/image-30.png" width=400px></p>
+<p><img src="/chocolatelmlitedoc/image-31.png" width=400px></p>
+<h2 id="_10">発言を編集したい</h2>
+<p>編集ボタンを押すことで編集できます。それより後の発言はすべて削除されます。  </p>
+<p><img src="/chocolatelmlitedoc/image-33.png" width=400px></p>
+<h2 id="_11">会話履歴を残して編集したい</h2>
+<p>ペルソナ一覧画面の「複製」を押すことで、会話履歴ごとペルソナを複製できます。</p>
+<p><img src="/chocolatelmlitedoc/image-34.png" width=400px></p>
+<h2 id="_12">システム設定について</h2>
+<p>システム設定から以下を設定できます。</p>
+<ul>
+<li>画面上のユーザーの名前 : 「あなた」ではなく別の名前で出したいとき</li>
+<li>休憩お知らせ基準値 : 休憩お知らせの基準を上げたい・下げたいとき</li>
+<li>会話履歴の最大トークン数 : 古い会話もAIに見てほしいとき (これは厳密なトークン数ではなく概算です)</li>
+<li>ローカルアクセスのみ許可 : ネットワーク内の他の端末からアクセスしてほしくないとき</li>
+</ul>
+<p><img src="/chocolatelmlitedoc/image-35.png" width=400px></p>
+<h2 id="llm">ローカルLLMや他のサービスって使えるの？</h2>
+<p>使えます。ローカルLLMは、LM Studioで調べてみてね。<br />
+(ただし、高スペックのPCが必要になります。ここ1年で劇的に変化しているので、AIに聞くと使い物にならない超高価なものを提案されやすいので気をつけてね)  </p>
+<div class="admonition tips">
+<p class="admonition-title">Tips</p>
+<p>エンドポイント一覧</p>
+<ul>
+<li><strong>LM Studio</strong>: <code>http://127.0.0.1:1234/v1</code></li>
+<li><strong>Ollama</strong>: <code>http://127.0.0.1:11434/v1</code></li>
+<li><strong>llama-server</strong>: <code>http://127.0.0.1:8080/v1</code></li>
+<li><strong>OpenAI</strong>: <code>https://api.openai.com/v1</code></li>
+<li><strong>Gemini</strong>: <code>https://generativelanguage.googleapis.com/v1beta/openai/</code></li>
+<li><strong>Claude</strong>: <code>https://api.anthropic.com/v1</code></li>
+<li><strong>OpenRouter</strong>: <code>https://openrouter.ai/api/v1</code></li>
+<li><strong>NanoGPT</strong>: <code>https://nano-gpt.com/api/v1</code></li>
+<li><strong>Ollama Cloud</strong>: <code>https://ollama.com/v1/</code></li>
+</ul>
+</div>
+<h2 id="_13">複数ペルソナを同時に動かしたい</h2>
+<p>本アプリケーションでは対応していません。<br />
+ポート番号を変えて、他のフォルダに分けることで、複数起動することは出来ます。</p>
+<h2 id="_14">画像生成</h2>
+<p>画像生成が出来ます。<br />
+画像生成は、各社仕様がバラバラなので、OpenRouterのみ対応しています。</p>
+<p>システム設定の応用設定の最下部に、以下のように設定してください<br />
+(初期設定では無効になっています。)</p>
+<ul>
+<li>画像生成を有効化: オン</li>
+<li>画像生成LLM Base URL: <code>https://openrouter.ai/api/v1</code></li>
+<li>画像生成APIキー: <code>OpenRouterのAPIキー</code></li>
+<li>画像生成モデル: <code>google/gemini-2.5-flash-image</code> </li>
+</ul>
+<p><a href="https://openrouter.ai/models?fmt=cards&amp;output_modalities=image">現在使えるモデルはこちら</a>(日々増えています)</p>
+<p>動作確認済みのモデルは以下です。</p>
+<ul>
+<li>google/gemini-2.5-flash-image</li>
+<li>openai/gpt-5-image</li>
+<li>openai/gpt-5-image-mini</li>
+</ul>
+<div class="admonition tips">
+<p class="admonition-title">Tips</p>
+<p>画像生成はより高価なため、簡易的なロックが掛かっています。<br />
+自分が頼んだのに「画像生成は高価なためユーザーからの明示的な要求時のみ実行可能です。」というエラーで失敗するときは、「ユーザーが頼んだと設定して」とお願いしてみてください。</p>
+<p>なお、このロックは万能ではないため、タイマー機能をオンにしたまま画像生成を有効にしてると、次々画像を作られてしまうことがあります。「画像生成を有効化」は、不要なときはオフにしておくことをおすすめします。</p>
+</div>
+<hr />
+<p>もっと本アプリケーションの機能を詳しく知りたい場合は、<a href="../3_advanced/">応用機能のご紹介</a> を御覧ください。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  ページトップへ戻る
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.instant.progress", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.indexes", "toc.follow", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "search.share", "content.tooltips"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

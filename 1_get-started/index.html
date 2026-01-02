@@ -1,0 +1,1305 @@
+
+<!doctype html>
+<html lang="ja" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://gpsnmeajp.github.io/chocolatelmlitedoc/1_get-started/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../2_tune/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>とにかく始めてみる(最速スタート) - Chocolate LM Lite 🍫 説明書</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="brown" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          コンテンツにスキップ
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="ヘッダー">
+    <a href=".." title="Chocolate LM Lite 🍫 説明書" class="md-header__button md-logo" aria-label="Chocolate LM Lite 🍫 説明書" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Chocolate LM Lite 🍫 説明書
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              とにかく始めてみる(最速スタート)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="brown" data-md-color-accent="deep-orange"  aria-label="ライトモードに切り替え"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="ライトモードに切り替え" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="brown" data-md-color-accent="deep-orange"  aria-label="ダークモードに切り替え"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="ダークモードに切り替え" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="brown" data-md-color-accent="deep-orange"  aria-label="自動モードに切り替え"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="自動モードに切り替え" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="検索">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="共有" aria-label="共有" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="クリア" aria-label="クリア" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            検索を初期化
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/gpsnmeajp/chocolatelmlite" title="リポジトリへ" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Chocolate LM Lite
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="タブ" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Chocolate LM Lite 🍫 へようこそ
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  とにかく始めてみる(最速スタート)
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../2_tune/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  こだわり調整
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../3_advanced/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  応用機能のご紹介
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../4_ai-basics/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  AI利用についての基礎知識
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../5_tailscale/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  外出先からアクセスする（Tailscale）
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../6_mcp/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  MCPツール
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="ナビゲーション" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Chocolate LM Lite 🍫 説明書" class="md-nav__button md-logo" aria-label="Chocolate LM Lite 🍫 説明書" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Chocolate LM Lite 🍫 説明書
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/gpsnmeajp/chocolatelmlite" title="リポジトリへ" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Chocolate LM Lite
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chocolate LM Lite 🍫 へようこそ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    とにかく始めてみる(最速スタート)
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    とにかく始めてみる(最速スタート)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        必要なもの
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AIサービスに登録する
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AIサービスに登録する">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ご紹介
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        登録手順
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        APIキーの入手
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        図で説明
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ダウンロードと準備
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        起動
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        初期設定
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        はじめてのペルソナ
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ペルソナ設定
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        会話統計機能と休憩促進について
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        料金について
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#openrouter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OpenRouterでおすすめのモデル
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#geminigrok" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ペルソナごとに違う言語モデル(例えばGeminiと、Grokと)使い分けたい
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        おわりに
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2_tune/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    こだわり調整
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3_advanced/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    応用機能のご紹介
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4_ai-basics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI利用についての基礎知識
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5_tailscale/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    外出先からアクセスする（Tailscale）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6_mcp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MCPツール
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="_1">とにかく始めてみる(最速スタート)</h1>
+<p>Chocolate LM Liteを使い始める手順を説明します。</p>
+<h2 id="_2">必要なもの</h2>
+<ul>
+<li>Windowsの入ったPC (一般的な事務用PCスペック)</li>
+<li>インターネット接続(Wi-Fiでもテザリングでも)</li>
+</ul>
+<p>MacやLinux、(高性能なスマホなら)Androidでも動作します。<br />
+ただし、いくらかのコマンド操作が必要です。<a href="https://github.com/gpsnmeajp/ChocolateLMLite?tab=readme-ov-file#%E3%83%93%E3%83%AB%E3%83%89%E6%89%8B%E9%A0%86">リポジトリのビルド手順</a>をご参照ください。</p>
+<h2 id="ai">AIサービスに登録する</h2>
+<h3 id="_3">ご紹介</h3>
+<p>本アプリケーションは、複数のAIサービスに対応しています。<br />
+初心者には<strong>OpenRouter</strong>がおすすめですので、ここではOpenRouterの使用を前提に説明します。</p>
+<div class="admonition tips">
+<p class="admonition-title">Tips</p>
+<ul>
+<li><a href="https://note.com/yuki_tech/n/n39b01723c409">無料でGeminiを使いたい人はこちらのサイトを参考にしてください(Gemini APIキーの取得手順)</a></li>
+<li>他にも、<a href="https://ollama.com/cloud">Ollama Cloud</a>や、<a href="https://nano-gpt.com/">NanoGPT</a>といった定額制のAPIサービスもあります。(noteなどで紹介されていますので調べてみてください)</li>
+<li>すでに別のAIサービスを契約済みで、APIキーを入手済みの方は、この章を飛ばして下にスクロールしてください。</li>
+<li>すでにローカルLLMの動作環境を用意してあり、動作確認済みの方も、この章を飛ばして下にスクロールしてください。</li>
+</ul>
+</div>
+<p><strong>おすすめする理由：</strong></p>
+<ul>
+<li><strong>有名サービス</strong> - AI業界で広く使われている信頼性の高いサービス</li>
+<li><strong>有名なモデルが揃っている</strong> - GPT、Claude、Geminiなど、人気のAIモデル提供会社と公式に連携</li>
+<li><strong>オープンモデルが使える</strong> - ローカルLLMで同じように使えるオープンモデルが使える</li>
+<li><strong>無料枠がある</strong> - 最初は課金なしで試せる</li>
+<li><strong>前払い式</strong> - 利用枠を追加して使う方式で、使いすぎを防げる</li>
+<li><strong>使った分だけ課金</strong> - 月額料金ではなく、使用量に応じた料金。</li>
+</ul>
+<p><strong>公式サイト</strong>: <a href="https://openrouter.ai/">https://openrouter.ai/</a></p>
+<p><img src="/chocolatelmlitedoc/image-3.png"  width=600px></p>
+<p>※無料枠を超える利用にはクレジットカードの登録が必要な点にご注意ください。<br />
+ 本ページでは解説しませんが、無料にこだわる場合はGeminiの方が無料枠が広いようです。</p>
+<div class="admonition warning">
+<p class="admonition-title">重要</p>
+<p>どのAIサービスを使う場合でも、無料枠や無料モデルは入出力が記録・分析される規約になっています。<br />
+プライバシーを重視する場合は、有料モデルを使うか、ローカルLLMを検討してください。<br />
+(有料と言っても、1回の生成につき数円未満の場合が多いです)</p>
+<p>情報収集は、OpenRouterの<a href="https://openrouter.ai/settings/privacy">プライバシー設定</a>で調整できますが、オフにすると無料モデルは使用できなくなります。</p>
+<p><strong>例外的に、<a href="https://ollama.com/cloud">Ollama Cloud</a>は、無料プランでも入出力が記録されない方針を採用していますので、そちらも検討してください。</strong></p>
+</div>
+<h3 id="_4">登録手順</h3>
+<p>登録するには、</p>
+<ul>
+<li>まず<a href="https://openrouter.ai/">公式サイト</a>に行きます。</li>
+<li>右上の「Sign up」ボタンを押します。</li>
+<li>Googleアカウントのボタン押すか、登録したいメールアドレスとパスワードを入れ、利用規約を読んで同意したらチェックを入れて、Continueを押します。</li>
+</ul>
+<p><img src="/chocolatelmlitedoc/image-4.png" width=200px></p>
+<div class="admonition tips">
+<p class="admonition-title">Tips</p>
+<p>この手順では、一旦無料で使えるモデルで説明します。</p>
+<p>もし、「今すぐGPT-4oとかGPT-5とかClaude Sonnet 4とかを使いたい」という方は、そのまま右上のメニューから「Credits」を選択して、Add Creditsボタンから課金してください。一旦は$10 (1500円程度)課金すれば、十分色々楽しめると思います。</p>
+</div>
+<h3 id="api">APIキーの入手</h3>
+<p>次にAPIキーを入手します。</p>
+<ul>
+<li>右上のメニューから、「Keys」を選択 (あるいは<a href="https://openrouter.ai/settings/keys">ここをクリック</a>)</li>
+<li>「Create API Key」の青いボタンをクリック</li>
+<li>名前欄に適当な名前を入力して「Create」をクリック</li>
+<li>API Keyが表示されますので、コピーボタンを押してコピーして、メモ帳などに取っておいてください。</li>
+</ul>
+<p>これでAIサービスへの登録は完了です。</p>
+<h3 id="_5">図で説明</h3>
+<p>右上のメニューから、「Keys」を選択 (あるいは<a href="https://openrouter.ai/settings/keys">ここをクリック</a>)</p>
+<p><img src="/chocolatelmlitedoc/image-5.png" width=300px></p>
+<p>「Create API Key」の青いボタンをクリック</p>
+<p><img src="/chocolatelmlitedoc/image-6.png" width=400px></p>
+<p>名前欄に適当な名前を入力して「Create」をクリック</p>
+<p><img src="/chocolatelmlitedoc/image-7.png" width=300px> </p>
+<p>※ ここで1日の利用金額上限とかを決めることが出来ます。<br />
+　例えばCredit limitを1にし、Reset limit everyをDailyにすると1日1ドルを超えると強制停止します。</p>
+<p><img src="/chocolatelmlitedoc/image-39.png" width=300px> </p>
+<p>API Keyが表示されますので、コピーボタンを押してコピーして、メモ帳などに取っておいてください。</p>
+<p><img src="/chocolatelmlitedoc/image-8.png" width=300px></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>このAPIキーを他人に渡したり見せたりすると、勝手にAIを使われてしまいます。<br />
+課金が減ったり、犯罪に使われることもありますので、絶対に他人に渡さないでください。<br />
+APIキーは、一度画面を閉じると二度と表示されませんが、何度でも削除して作り直すことが出来ます。  </p>
+</div>
+<h2 id="_6">ダウンロードと準備</h2>
+<p>まず、ダウンロードしましょう。</p>
+<ul>
+<li><a href="https://github.com/gpsnmeajp/chocolatelmlite/releases">ここをクリックしてダウンロードページを開きます。</a></li>
+<li>下の方にAssetsがあり、その中に「ChocolateLMLite_vXXX.zip」がありますので、それをクリックしてダウンロードします。</li>
+<li>「未確認のファイル」など表示された場合は、許可してください。</li>
+<li>解凍ツールを使うか、zipファイルを右クリックして「すべて展開」をクリックして、zipファイルを展開します。展開先はデスクトップなどのお好みの場所で問題ありません。</li>
+</ul>
+<p><img alt="alt text" src="../image-9.png" /></p>
+<h2 id="_7">起動</h2>
+<p><code>0_ChocolateLMLite_vXXX.exe</code> をダブルクリックして起動します。</p>
+<p><img alt="alt text" src="../image-11.png" /></p>
+<p>初回起動時、Windowsから「WindowsによってPCが保護されました」という警告が出る場合があります<br />
+その場合</p>
+<ul>
+<li>「詳細情報」をクリック</li>
+<li>「実行」ボタンをクリック</li>
+</ul>
+<p>以下のようなファイアーウォール警告が出た場合は、許可してください。<br />
+(拒否でも動きますが、後々スマホからアクセスできなくなる可能性があります)</p>
+<p><img src="/chocolatelmlitedoc/image-15.png" width=200px></p>
+<p>以下のような表示が出れば起動成功です。
+この画面は閉じずに放置してください。</p>
+<p><img src="/chocolatelmlitedoc/image-12.png" width=600px></p>
+<p>問題がなければ、自動でブラウザが起動し、Chocolate LM Liteのようこそ画面が出ます(Windowsのみ)<br />
+開かない場合は、<a href="http://127.0.0.1:8010">http://127.0.0.1:8010</a>を開いてください。</p>
+<p><img src="/chocolatelmlitedoc/image-14.png" width=400px></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>フォルダ内に大量のファイルがありますが、すべて必要なので移動したり消したりしないでください。</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>フォルダの場所は任意ですが、置かないほうが良い場所はあります。
++ 「ダウンロード」フォルダのまま使うと、後で自動削除される可能性があります。必ず別の場所に移動してください。<br />
++ Program FilesやAppDataなどのシステムフォルダでは正常に動作しないため、避けてください。
++ OneDrive上では、ときどきうまく動かないかもしれません。</p>
+</div>
+<div class="admonition tips">
+<p class="admonition-title">Tips</p>
+<p>うまく起動しない場合は、展開からやり直してください。
+logsフォルダ内のログファイルに情報がある場合があります。</p>
+</div>
+<div class="admonition tips">
+<p class="admonition-title">Tips</p>
+<p>MacやLinux、Androidは<a href="https://github.com/gpsnmeajp/ChocolateLMLite?tab=readme-ov-file#%E3%83%93%E3%83%AB%E3%83%89%E6%89%8B%E9%A0%86">リポジトリのビルド手順</a>をご参照ください。</p>
+</div>
+<div class="admonition notice">
+<p class="admonition-title">Notice</p>
+<p>このアプリは個人開発者が公開しているため、未確認の発行元としてWindowsの警告が出ることがあります。<br />
+ウィルス検査をして出荷していますが、誤検知されることはあります。<br />
+もしEXE形式が信用できない場合は、ご自身での<a href="https://github.com/gpsnmeajp/ChocolateLMLite?tab=readme-ov-file#%E3%83%93%E3%83%AB%E3%83%89%E6%89%8B%E9%A0%86">ビルド手順</a>をおすすめします。 </p>
+</div>
+<h2 id="_8">初期設定</h2>
+<p>まず、使い始めるための設定をしましょう。</p>
+<p>「はじめる」をクリック後、ペルソナ選択画面が出ますので、右上の歯車マークをクリックします。</p>
+<p><img src="/chocolatelmlitedoc/image-16.png" width=400px></p>
+<p>システム設定画面が開きますので、以下の情報を入力してください。</p>
+<ul>
+<li>BaseURL: <code>https://openrouter.ai/api/v1</code></li>
+<li>APIキー: <code>さきほどAIサービスからコピーしてきたAPIキー</code></li>
+<li>既定の言語モデル: <code>openai/gpt-oss-20b:free</code> </li>
+</ul>
+<p>入力が終わったら、<strong>「保存」ボタンを押してから</strong> 「戻る」を押してください。</p>
+<p><img src="/chocolatelmlitedoc/image-24.png" width=400px></p>
+<div class="admonition tips">
+<p class="admonition-title">Tips</p>
+<p>ここでは、無課金でも試せる <code>openai/gpt-oss-20b:free</code> を案内しています。<br />
+以下の点に注意してください。</p>
+<ul>
+<li>このモデルの性能はあまり高くなく、ビジネス用途はともかくとして、キャラクター用途には向いていません。</li>
+<li>無料モデルプロバイダーのため、入出力内容は研究用途に記録されます。</li>
+</ul>
+<p>課金済みの場合は、最初から入力されている <code>google/gemini-2.5-flash</code> のままで構いません。安価で楽しむことが出来ます。また、<code>openai/gpt-4o</code>, <code>openai/gpt-5-chat</code> などを使用することも出来ます。</p>
+<p>他におすすめのモデルについては、ページ下部でご紹介しますので、まずは動作確認を済ませてください。</p>
+</div>
+<div class="admonition tips">
+<p class="admonition-title">Tips</p>
+<p>もし、既にOpenRouter以外のAIサービスを契約していて、BaseURLやAPIキーが分かる場合はそれが使用できます。  </p>
+</div>
+<h2 id="_9">はじめてのペルソナ</h2>
+<p>AIと会話してみましょう。</p>
+<p>新しいペルソナを作るには、<strong>「新規作成」ボタン</strong>を押します。</p>
+<p><img src="/chocolatelmlitedoc/image-19.png" width=400px></p>
+<p>ペルソナに名前をつけて<strong>「作成」ボタン</strong>を押すと、一覧に新しいペルソナが増えます。</p>
+<p><img src="/chocolatelmlitedoc/image-21.png" width=400px></p>
+<p>選択すると、会話画面に移動します。</p>
+<p><img src="/chocolatelmlitedoc/image-22.png" width=400px></p>
+<p>会話画面の使い方は、一般的なAIチャットアプリケーションと同様です。<br />
+テキストを入れて<strong>「送信」ボタン</strong>あるいはEnterキーを押すと送信されます。改行はShift+Enterキーです。  </p>
+<p><strong>「添付」ボタン</strong>を押すと、画像が添付できます。</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>一般に画像は処理が高額になる(文字とは別料金)なのでご注意ください。 <br />
+べらぼうに高くはなりにくいように設計していますが、それでも多少チャージ額の減りが早くなります。</p>
+</div>
+<p><img src="/chocolatelmlitedoc/image-23.png" width=400px></p>
+<p>例えば、「こんにちは」と入力すると以下のようになります。</p>
+<p><img src="/chocolatelmlitedoc/image-25.png" width=400px></p>
+<div class="admonition tips">
+<p class="admonition-title">Tips</p>
+<p>もし、このときに空白しか帰ってこない場合、Base URLが間違っている可能性があります。再度入力してみてください。</p>
+</div>
+<h2 id="_10">ペルソナ設定</h2>
+<p>このまま会話を楽しむことも出来ますが、ペルソナをカスタマイズすることが出来ます。<br />
+右上の歯車マークを押すと、ペルソナ設定画面に入ります。</p>
+<p><img src="/chocolatelmlitedoc/image-26.png" width=400px></p>
+<p>ペルソナ設定画面では、名前の変更や、アイコン、背景画像の設定、メモリの確認などが出来ます。<br />
+そして重要なのが<strong>システムプロンプト</strong>です。</p>
+<p>AIの振る舞いを根本から設定することが出来ます。</p>
+<p><img src="/chocolatelmlitedoc/image-27.png" width=400px></p>
+<p>試しに「俺様キャラとして振る舞って」と入れると、キャラクターの振る舞いが苦手なgpt-ossでも、以下のように振る舞いが変わります。</p>
+<p><img src="/chocolatelmlitedoc/image-28.png" width=400px></p>
+<p>ペルソナ一覧画面に戻るには、左上のボタンを押します。</p>
+<p><img src="/chocolatelmlitedoc/image-29.png" width=400px></p>
+<div class="admonition tips">
+<p class="admonition-title">Tips</p>
+<p>システムプロンプトは、常に適用される非常に強力な指示です。<br />
+一般のAIサービスのプロンプトより遥かに強力に効くため、必要に応じて調整が必要です。</p>
+<p>ポストプロンプトやキーワードナレッジと組み合わせることで、より強力な指示が可能です。</p>
+<p>また、システムプロンプトに何でも入れてよいというわけではなく、言語モデルの安全基準にぶつかったり、LLMプロバイダーの安全基準に引っかかると、軽い場合で応答拒否、(米国法違反などの内容を含む)最悪の場合は人手によるチェックの上、利用権限の剥奪などが起きますので、設定内容は注意してください。</p>
+</div>
+<h2 id="_11">会話統計機能と休憩促進について</h2>
+<p>本アプリケーションには、AI利用の健康被害の防止のため、セルフホスト型のソフトウェアとしては先進的な会話統計機能と休憩促進機能を搭載しています。</p>
+<p>これは、会話の回数や、直近8時間以内のユーザーの発言数を常に表示し、一定値を超えた際に休憩を促す機能です。</p>
+<p>この情報はAIにも自動送信されるため、休憩が必要と判断されたときにはAIから休憩を促されることがあります。</p>
+<p><img src="/chocolatelmlitedoc/image-37.png" width=400px></p>
+<div class="admonition tips">
+<p class="admonition-title">Tips</p>
+<p>休憩基準や、AIに送信するかなどは、システム設定から調整できます。</p>
+</div>
+<h2 id="_12">料金について</h2>
+<p>OpenRouterをご利用の場合は、利用料金について定期的にご確認ください。</p>
+<ul>
+<li><a href="https://openrouter.ai/settings/credits">現在のチャージ残額の確認は、Creditsページを</a></li>
+<li><a href="https://openrouter.ai/activity">会話1回あたりの消費などの確認は、Activityページを</a></li>
+</ul>
+<p>それぞれご確認ください。</p>
+<p><img src="/chocolatelmlitedoc/image-38.png" width=600px></p>
+<h2 id="openrouter">OpenRouterでおすすめのモデル</h2>
+<p>最後に、おすすめのモデル(無料・有料)を以下に示します。</p>
+<p>無料モデルは、入力された情報を収集し、訓練に使ったり研究機関に提供します。(その対価として無料で利用できます)<br />
+情報収集は、OpenRouterの<a href="https://openrouter.ai/settings/privacy">プライバシー設定</a>で調整できますが、オフにすると無料モデルは使用できなくなります。<br />
+(逆に有料モデルで情報収集を許可すると割引もあります。)</p>
+<table>
+<thead>
+<tr>
+<th>モデル名</th>
+<th>入力料金</th>
+<th>出力料金</th>
+<th>特徴</th>
+<th>プライバシー</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>z-ai/glm-4.5-air:free</code></td>
+<td>無料</td>
+<td>無料</td>
+<td>自由度が高く創作能力も良い、性能を期待しすぎないこと。</td>
+<td>⚠️ ログ収集あり</td>
+</tr>
+<tr>
+<td><code>openai/gpt-oss-20b:free</code></td>
+<td>無料</td>
+<td>無料</td>
+<td>ローカルLLMでは一般PCでもギリ動くが性能悪いし自由度は低め</td>
+<td>⚠️ ログ収集あり</td>
+</tr>
+<tr>
+<td><code>cognitivecomputations/dolphin-mistral-24b-venice-edition:free</code></td>
+<td>無料</td>
+<td>無料</td>
+<td>比較的自由度は高め</td>
+<td>⚠️ ログ収集あり</td>
+</tr>
+<tr>
+<td><code>qwen/qwen3-235b-a22b:free</code></td>
+<td>無料</td>
+<td>無料</td>
+<td>ローカルLLMの定番</td>
+<td>⚠️ ログ収集あり</td>
+</tr>
+<tr>
+<td><code>google/gemini-2.5-flash</code></td>
+<td>$0.30/M input tokens</td>
+<td>$2.50/M output tokens</td>
+<td>創作能力はかなり高めだが自由度は微妙</td>
+<td>✅ プライバシー保護</td>
+</tr>
+<tr>
+<td><code>google/gemini-2.5-pro</code></td>
+<td>Starting at $1.25/M input tokens</td>
+<td>Starting at <strong>$10/M</strong> output tokens</td>
+<td>創作能力は最高クラスだが自由度は微妙(そして高価)</td>
+<td>✅ プライバシー保護</td>
+</tr>
+<tr>
+<td><code>openai/gpt-5</code></td>
+<td>$1.25/M input tokens</td>
+<td><strong>$10/M</strong> output tokens</td>
+<td>最新のGPTモデル(そして高価)</td>
+<td>✅ プライバシー保護</td>
+</tr>
+<tr>
+<td><code>openai/gpt-4o</code></td>
+<td>Starting at $2.50/M input tokens</td>
+<td>Starting at <strong>$10/M</strong> output tokens</td>
+<td>みんな大好きGPT-4o(そしてめちゃ高価)</td>
+<td>✅ プライバシー保護</td>
+</tr>
+<tr>
+<td><code>openai/gpt-4.1</code></td>
+<td>Starting at $2/M input tokens</td>
+<td>Starting at <strong>$8/M</strong> output tokens</td>
+<td>コスパの良いGPT(そして高価)</td>
+<td>✅ プライバシー保護</td>
+</tr>
+<tr>
+<td><code>qwen/qwen3-235b-a22b-2507</code></td>
+<td>$0.08/M input tokens</td>
+<td>$0.55/M output tokens</td>
+<td>ローカルLLMの定番だが創作にはそこそこ。そして激安。</td>
+<td>✅ プライバシー保護</td>
+</tr>
+<tr>
+<td><code>z-ai/glm-4.5</code></td>
+<td>$0.38/M input tokens</td>
+<td>$1.60/M output tokens</td>
+<td>比較的自由度が高く創作能力も良いが、低速。</td>
+<td>✅ プライバシー保護</td>
+</tr>
+<tr>
+<td><code>z-ai/glm-4.5-air</code></td>
+<td>$0.14/M input tokens</td>
+<td>$0.86/M output tokens</td>
+<td>比較的自由度が高く創作能力も良いが、性能を期待しすぎないこと。</td>
+<td>✅ プライバシー保護</td>
+</tr>
+<tr>
+<td><code>anthropic/claude-sonnet-4</code></td>
+<td>Starting at <strong>$3/M</strong> input tokens</td>
+<td>Starting at <strong>$15/M</strong> output tokens</td>
+<td>創作能力はかなり高めだが高価</td>
+<td>✅ プライバシー保護</td>
+</tr>
+<tr>
+<td><code>anthropic/claude-opus-4</code></td>
+<td><strong>$15/M</strong> input tokens</td>
+<td><strong>$75/M</strong> output tokens</td>
+<td>創作能力は最高クラスだが超高額なのでまったくおすすめしません！すぐにクレジットが空になります！</td>
+<td>✅ プライバシー保護</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tips">
+<p class="admonition-title">Tips</p>
+<p>記載の料金は、2025年10月時点のものです。提供されるモデルは日々変わります。 <br />
+最新の情報は<a href="https://openrouter.ai/models">OpenRouter公式</a>を参照してください。</p>
+</div>
+<div class="admonition tips">
+<p class="admonition-title">M Tokensとは？</p>
+<ul>
+<li>日本語は1文字が1トークンに近い。英語は単語に近い。</li>
+<li>例: 「こんにちは」は5トークン、「Hello」は1トークンに相当したりする。</li>
+<li>1M Tokensは約100万文字（日本語の場合）</li>
+<li>つまり、$1/M input tokensは、約100万文字の入力で1ドルかかる計算。</li>
+</ul>
+</div>
+<div class="admonition tips">
+<p class="admonition-title">Starting atとは？</p>
+<p>料金が使用量に応じて変動することを意味します。たいてい、一定量を超えると2倍とかの値段になります。要注意です。<br />
+OpenRouterの<a href="https://openrouter.ai/models">Models</a>ページで、各モデルの料金体系を確認できます。</p>
+</div>
+<div class="admonition question">
+<p class="admonition-title">「自由度が低い」とは？</p>
+<p>API利用でも、限定的ながらガードレールは存在しますし、言語モデル自体に拒否能力があります。<br />
+そのため、特定の表現ができなかったり、特定の話題を避けたりすることがあります。<br />
+(これは本アプリケーションの仕様ではなく、言語モデルやAPIサービス側の仕様です)</p>
+<ul>
+<li>自由度が高いモデルでも、何でも許されるわけではありません。(露骨な表現はNGになる場合が多いです)</li>
+<li>これを回避しようとする試みはAPI利用規約違反になる場合があります。</li>
+<li>ローカルLLMでも、同様に拒否が発生する場合があります。</li>
+</ul>
+</div>
+<h2 id="geminigrok">ペルソナごとに違う言語モデル(例えばGeminiと、Grokと)使い分けたい</h2>
+<p>ペルソナ設定画面に、ペルソナごとの言語モデル設定があります。<br />
+これを使うと、システム設定画面の言語モデルとは違うものが設定できます。</p>
+<p>OpenRouterを使用している場合、各社の言語モデルを自由に併用することが出来ます。</p>
+<p><img src="/chocolatelmlitedoc/image-32.png" width=400px></p>
+<div class="admonition tips">
+<p class="admonition-title">Tips</p>
+<p>Q. ローカルLLMや、違うAIサービスと同時に接続できないの？<br />
+A. 本アプリケーション単体ではできません。(他の高度なAIアプリであればできる場合があります)<br />
+※パワーユーザー向け: <a href="https://note.com/taku_sid/n/n23d2c914ef11">LiteLLM Proxy</a>を立てるとできます。</p>
+</div>
+<h2 id="_13">おわりに</h2>
+<p>以上で、「とにかく始めてみる」は終了です。</p>
+<p>より多彩に楽しんだり、機能を知りたい場合は <a href="../2_tune/">こだわり調整</a>  を御覧ください。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  ページトップへ戻る
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.instant.progress", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.indexes", "toc.follow", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "search.share", "content.tooltips"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
