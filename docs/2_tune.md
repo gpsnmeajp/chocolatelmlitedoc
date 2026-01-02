@@ -142,17 +142,22 @@ EXEファイルの下に`data`というフォルダが出来ています。
 + talk.sqlite3: 会話履歴が入っています。SQLite3形式が扱えるアプリケーションで確認・編集ができます。壊すと全部消えます。
 + talk.jsonl.bak: 旧形式の会話履歴が入っています。
 
-!!! tips
-    SQLite3形式の会話履歴を確認・編集したい場合は、[DB Browser for SQLite](https://sqlitebrowser.org/dl/) などのアプリケーションを使うと便利です。(Windows, Mac, Linux対応)
-
-    ![alt text](image-40.png)
-
 ※これらのファイルは、必要が生まれるまで作成されません。
 
 編集する際は必ずバックアップを取ってください。  
 EXEファイルの下に`backup`というフォルダには、7日分の自動バックアップがあるので、壊れたときはそこから救出できるかもしれません。
 
 ![alt text](image-36.png)
+
+!!! tips
+    SQLite3形式の会話履歴を確認・編集したい場合は、[DB Browser for SQLite](https://sqlitebrowser.org/dl/) などのアプリケーションを使うと便利です。(Windows, Mac, Linux対応)  
+    CSV形式などにもエクスポートできます。(Excelで開く場合は、`データ`→`テキストまたはCSVから`をクリックし、インポートしてください)
+
+    ![alt text](image-40.png)
+
+    ![alt text](image-41.png)
+
+    ![alt text](image-42.png)
 
 ## メモリの確認をしたい・アイコンや背景画像を設定したい
 
